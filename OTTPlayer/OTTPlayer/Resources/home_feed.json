@@ -1,0 +1,152 @@
+{
+  "hero": {
+    "content_id": "jellyfish-drift",
+    "tagline": "Ten unhurried seconds of jellyfish pulsing through blue water. Short enough to watch the whole thing and see the completion event fire."
+  },
+  "rails": [
+    {
+      "id": "featured",
+      "title": "Featured Films",
+      "content_ids": ["jellyfish-drift","tears-of-steel", "big-buck-bunny", "tears-of-steel-subtitled", "sintel-trailer-hd"]
+    },
+    {
+      "id": "trailers",
+      "title": "Trailers",
+      "style": "carousel",
+      "content_ids": ["sintel-trailer-hd", "bunny-trailer", "jellyfish-drift"]
+    },
+    {
+      "id": "quick-clips",
+      "title": "Quick Clips",
+      "content_ids": ["jellyfish-drift", "bunny-snack", "bunny-trailer", "studio-reel"]
+    },
+    {
+      "id": "streaming-lab",
+      "title": "Streaming Lab · HLS",
+      "content_ids": ["hls-advanced", "hls-widescreen", "hls-classic", "big-buck-bunny"]
+    }
+  ],
+  "contents": [
+    {
+      "id": "tears-of-steel",
+      "title": "Tears of Steel",
+      "description": "Years after a falling-out, a scientist and a crew of misfit fighters gather on an old bridge to stage one improbable experiment: rewrite a single moment in the past and stop the machines it unleashed. A live-action and VFX short from the Blender Foundation's open movie projects.",
+      "genre": "Sci-Fi",
+      "release_year": 2012,
+      "duration_seconds": 734,
+      "thumbnail_url": "https://mango.blender.org/wp-content/uploads/2013/05/01_thom_celia_bridge.jpg",
+      "banner_url": "https://mango.blender.org/wp-content/uploads/2013/05/01_thom_celia_bridge.jpg",
+      "video_url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+    },
+    {
+      "id": "big-buck-bunny",
+      "title": "Big Buck Bunny",
+      "description": "A gentle giant of a rabbit just wants a quiet morning in the meadow. Three bored rodents have other plans, and they badly underestimate how creative a provoked bunny can be. Animated open movie, streamed here over adaptive HLS.",
+      "genre": "Animation",
+      "release_year": 2008,
+      "duration_seconds": 635,
+      "thumbnail_url": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg",
+      "banner_url": "https://peach.blender.org/wp-content/uploads/title_anouncement.jpg",
+      "video_url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+    },
+    {
+      "id": "tears-of-steel-subtitled",
+      "title": "Tears of Steel (Subtitled)",
+      "description": "The same bridge, the same desperate plan, now packaged as fragmented-MP4 HLS with a subtitle track. Open the native options menu during playback to switch captions on.",
+      "genre": "Sci-Fi",
+      "release_year": 2012,
+      "duration_seconds": 734,
+      "thumbnail_url": "https://picsum.photos/seed/ott-steel-subs/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-steel-subs/1280/720",
+      "video_url": "https://test-streams.mux.dev/tos_ismc/main.m3u8"
+    },
+    {
+      "id": "sintel-trailer-hd",
+      "title": "Sintel · HD Trailer",
+      "description": "A lone traveller crosses frozen ridges and crowded bazaars searching for the young dragon she once raised. The 720p trailer for the Blender Foundation's third open movie.",
+      "genre": "Fantasy",
+      "release_year": 2010,
+      "duration_seconds": 52,
+      "thumbnail_url": "https://durian.blender.org/wp-content/uploads/2010/06/05.8b_comp_000272.jpg",
+      "banner_url": "https://durian.blender.org/wp-content/uploads/2010/06/05.8b_comp_000272.jpg",
+      "video_url": "https://download.blender.org/durian/trailer/sintel_trailer-720p.mp4"
+    },
+    {
+      "id": "bunny-trailer",
+      "title": "Big Buck Bunny · Trailer",
+      "description": "Half a minute of meadow mischief: the setup, the bullies, and a hint of the payback to come.",
+      "genre": "Animation",
+      "release_year": 2008,
+      "duration_seconds": 33,
+      "thumbnail_url": "https://media.w3.org/2010/05/bunny/poster.png",
+      "banner_url": "https://media.w3.org/2010/05/bunny/poster.png",
+      "video_url": "https://media.w3.org/2010/05/bunny/trailer.mp4"
+    },
+    {
+      "id": "jellyfish-drift",
+      "title": "Jellyfish Drift",
+      "description": "Ten unhurried seconds of jellyfish pulsing through blue water. Short enough to watch the whole thing and see the completion event fire.",
+      "genre": "Nature",
+      "release_year": 2016,
+      "duration_seconds": 10,
+      "thumbnail_url": "https://picsum.photos/seed/ott-jellyfish/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-jellyfish/1280/720",
+      "video_url": "https://test-videos.co.uk/vids/jellyfish/mp4/h264/720/Jellyfish_720_10s_1MB.mp4"
+    },
+    {
+      "id": "bunny-snack",
+      "title": "Bunny Bite",
+      "description": "A ten-second slice of the meadow, handy for checking playback end to end without waiting.",
+      "genre": "Animation",
+      "release_year": 2008,
+      "duration_seconds": 10,
+      "thumbnail_url": "https://picsum.photos/seed/ott-bunny-bite/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-bunny-bite/1280/720",
+      "video_url": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4"
+    },
+    {
+      "id": "studio-reel",
+      "title": "Studio Reel",
+      "description": "A five-minute progressive MP4 that is useful for scrubbing and seek tests over a plain HTTP download.",
+      "genre": "Test Media",
+      "release_year": 2010,
+      "duration_seconds": 300,
+      "thumbnail_url": "https://picsum.photos/seed/ott-studio-reel/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-studio-reel/1280/720",
+      "video_url": "https://media.w3.org/2010/05/video/movie_300.mp4"
+    },
+    {
+      "id": "hls-advanced",
+      "title": "Adaptive Stream · Advanced",
+      "description": "A multi-bitrate fragmented-MP4 HLS stream with alternate audio. Good for watching the player climb and drop between quality levels.",
+      "genre": "Test Media",
+      "release_year": 2017,
+      "duration_seconds": 600,
+      "thumbnail_url": "https://picsum.photos/seed/ott-hls-advanced/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-hls-advanced/1280/720",
+      "video_url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8"
+    },
+    {
+      "id": "hls-widescreen",
+      "title": "Adaptive Stream · 16:9",
+      "description": "A half-hour widescreen HLS test pattern. Long enough to background the app mid-play and come back to it.",
+      "genre": "Test Media",
+      "release_year": 2015,
+      "duration_seconds": 1800,
+      "thumbnail_url": "https://picsum.photos/seed/ott-hls-wide/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-hls-wide/1280/720",
+      "video_url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8"
+    },
+    {
+      "id": "hls-classic",
+      "title": "Adaptive Stream · 4:3",
+      "description": "The classic 4:3 HLS test pattern, letterboxed inside a widescreen player.",
+      "genre": "Test Media",
+      "release_year": 2012,
+      "duration_seconds": 1800,
+      "thumbnail_url": "https://picsum.photos/seed/ott-hls-classic/640/360",
+      "banner_url": "https://picsum.photos/seed/ott-hls-classic/1280/720",
+      "video_url": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
+    }
+  ]
+}

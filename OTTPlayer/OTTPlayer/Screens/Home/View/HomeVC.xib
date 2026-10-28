@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="OTTPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="hvc-02-col" id="hvc-o1-col"/>
+                <outlet property="statusBarBackdropView" destination="hvc-05-bdp" id="hvc-o3-bdp"/>
+                <outlet property="view" destination="hvc-01-vie" id="hvc-o2-vie"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hvc-01-vie">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-02-col">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hvc-03-lay">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-05-bdp" userLabel="Status Bar Backdrop">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hvc-06-bdc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="systemChromeMaterialDark"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hvc-04-saf"/>
+            <constraints>
+                <constraint firstItem="hvc-02-col" firstAttribute="top" secondItem="hvc-01-vie" secondAttribute="top" id="hvc-c1-top"/>
+                <constraint firstItem="hvc-02-col" firstAttribute="leading" secondItem="hvc-01-vie" secondAttribute="leading" id="hvc-c2-led"/>
+                <constraint firstAttribute="trailing" secondItem="hvc-02-col" secondAttribute="trailing" id="hvc-c3-trl"/>
+                <constraint firstAttribute="bottom" secondItem="hvc-02-col" secondAttribute="bottom" id="hvc-c4-bot"/>
+                <constraint firstItem="hvc-05-bdp" firstAttribute="top" secondItem="hvc-01-vie" secondAttribute="top" id="hvc-c5-btp"/>
+                <constraint firstItem="hvc-05-bdp" firstAttribute="leading" secondItem="hvc-01-vie" secondAttribute="leading" id="hvc-c6-bld"/>
+                <constraint firstAttribute="trailing" secondItem="hvc-05-bdp" secondAttribute="trailing" id="hvc-c7-btr"/>
+                <constraint firstItem="hvc-05-bdp" firstAttribute="bottom" secondItem="hvc-04-saf" secondAttribute="top" id="hvc-c8-bbt"/>
+            </constraints>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </view>
+    </objects>
+</document>

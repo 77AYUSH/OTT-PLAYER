@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hbc-01-cel" customClass="HeroBannerCell" customModule="OTTPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="540"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hbc-02-cnt">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="540"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-03-img">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="540"/>
+                    </imageView>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-09-tgr" userLabel="Top Gradient" customClass="GradientView" customModule="OTTPlayer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="hbc-cf-tgh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="fadesFromTop" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-04-grd" userLabel="Bottom Gradient" customClass="GradientView" customModule="OTTPlayer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="540"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-05-stk">
+                        <rect key="frame" x="24" y="300" width="345" height="212"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEATURED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-10-eye">
+                                <rect key="frame" x="140" y="0.0" width="65" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-06-ttl">
+                                <rect key="frame" x="141.66666666666666" y="23" width="62" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metadata" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-11-met">
+                                <rect key="frame" x="141" y="72" width="63" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-07-tag">
+                                <rect key="frame" x="146" y="96" width="53" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-12-bst" userLabel="Button Stack">
+                                <rect key="frame" x="22.666666666666657" y="122" width="300" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-13-ply">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="46"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="hbc-01-cel" eventType="touchUpInside" id="hbc-a2-ply"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-08-btn">
+                                        <rect key="frame" x="156" y="0.0" width="144" height="46"/>
+                                        <state key="normal" title="Details"/>
+                                        <connections>
+                                            <action selector="detailsButtonTapped:" destination="hbc-01-cel" eventType="touchUpInside" id="hbc-a1-btn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="hbc-c9-bth"/>
+                                    <constraint firstAttribute="width" priority="750" constant="300" id="hbc-cg-bsw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hbc-03-img" firstAttribute="top" secondItem="hbc-02-cnt" secondAttribute="top" id="hbc-c1-top"/>
+                    <constraint firstItem="hbc-03-img" firstAttribute="leading" secondItem="hbc-02-cnt" secondAttribute="leading" id="hbc-c2-led"/>
+                    <constraint firstAttribute="trailing" secondItem="hbc-03-img" secondAttribute="trailing" id="hbc-c3-trl"/>
+                    <constraint firstAttribute="bottom" secondItem="hbc-03-img" secondAttribute="bottom" id="hbc-c4-bot"/>
+                    <constraint firstItem="hbc-09-tgr" firstAttribute="top" secondItem="hbc-02-cnt" secondAttribute="top" id="hbc-ch-ttp"/>
+                    <constraint firstItem="hbc-09-tgr" firstAttribute="leading" secondItem="hbc-02-cnt" secondAttribute="leading" id="hbc-ci-tld"/>
+                    <constraint firstAttribute="trailing" secondItem="hbc-09-tgr" secondAttribute="trailing" id="hbc-cj-ttr"/>
+                    <constraint firstItem="hbc-04-grd" firstAttribute="top" secondItem="hbc-02-cnt" secondAttribute="top" id="hbc-c5-gtp"/>
+                    <constraint firstItem="hbc-04-grd" firstAttribute="leading" secondItem="hbc-02-cnt" secondAttribute="leading" id="hbc-c6-gld"/>
+                    <constraint firstAttribute="trailing" secondItem="hbc-04-grd" secondAttribute="trailing" id="hbc-c7-gtr"/>
+                    <constraint firstAttribute="bottom" secondItem="hbc-04-grd" secondAttribute="bottom" id="hbc-c8-gbt"/>
+                    <constraint firstItem="hbc-05-stk" firstAttribute="leading" secondItem="hbc-02-cnt" secondAttribute="leading" constant="24" id="hbc-cb-sld"/>
+                    <constraint firstAttribute="trailing" secondItem="hbc-05-stk" secondAttribute="trailing" constant="24" id="hbc-cc-str"/>
+                    <constraint firstAttribute="bottom" secondItem="hbc-05-stk" secondAttribute="bottom" constant="24" id="hbc-cd-sbt"/>
+                    <constraint firstItem="hbc-05-stk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hbc-02-cnt" secondAttribute="top" constant="60" id="hbc-ce-stp"/>
+                </constraints>
+            </view>
+            <size key="customSize" width="393" height="540"/>
+            <connections>
+                <outlet property="bannerImageView" destination="hbc-03-img" id="hbc-o1-img"/>
+                <outlet property="contentStackView" destination="hbc-05-stk" id="hbc-o5-stk"/>
+                <outlet property="detailsButton" destination="hbc-08-btn" id="hbc-o2-btn"/>
+                <outlet property="eyebrowLabel" destination="hbc-10-eye" id="hbc-o6-eye"/>
+                <outlet property="metadataLabel" destination="hbc-11-met" id="hbc-o7-met"/>
+                <outlet property="playButton" destination="hbc-13-ply" id="hbc-o8-ply"/>
+                <outlet property="taglineLabel" destination="hbc-07-tag" id="hbc-o3-tag"/>
+                <outlet property="titleLabel" destination="hbc-06-ttl" id="hbc-o4-ttl"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </collectionViewCell>
+    </objects>
+</document>

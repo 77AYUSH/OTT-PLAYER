@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="ccc-01-cel" customClass="ContentCardCell" customModule="OTTPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="ccc-02-cnt">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-03-img">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="101.33333333333333"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-05-bdg" userLabel="Duration Badge">
+                        <rect key="frame" x="138" y="77" width="36" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="0:52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-06-dur">
+                                <rect key="frame" x="6" y="3" width="24" height="12"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ccc-06-dur" firstAttribute="top" secondItem="ccc-05-bdg" secondAttribute="top" constant="3" id="ccc-b1-top"/>
+                            <constraint firstAttribute="bottom" secondItem="ccc-06-dur" secondAttribute="bottom" constant="3" id="ccc-b2-bot"/>
+                            <constraint firstItem="ccc-06-dur" firstAttribute="leading" secondItem="ccc-05-bdg" secondAttribute="leading" constant="6" id="ccc-b3-led"/>
+                            <constraint firstAttribute="trailing" secondItem="ccc-06-dur" secondAttribute="trailing" constant="6" id="ccc-b4-trl"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-04-lbl">
+                        <rect key="frame" x="2" y="109.33333333333333" width="176" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-07-sub">
+                        <rect key="frame" x="2" y="128.33333333333334" width="176" height="14.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ccc-03-img" firstAttribute="top" secondItem="ccc-02-cnt" secondAttribute="top" id="ccc-c1-top"/>
+                    <constraint firstItem="ccc-03-img" firstAttribute="leading" secondItem="ccc-02-cnt" secondAttribute="leading" id="ccc-c2-led"/>
+                    <constraint firstAttribute="trailing" secondItem="ccc-03-img" secondAttribute="trailing" id="ccc-c3-trl"/>
+                    <constraint firstItem="ccc-03-img" firstAttribute="width" secondItem="ccc-03-img" secondAttribute="height" multiplier="16:9" id="ccc-c4-asp"/>
+                    <constraint firstItem="ccc-05-bdg" firstAttribute="trailing" secondItem="ccc-03-img" secondAttribute="trailing" constant="-6" id="ccc-c9-btr"/>
+                    <constraint firstItem="ccc-05-bdg" firstAttribute="bottom" secondItem="ccc-03-img" secondAttribute="bottom" constant="-6" id="ccc-ca-bbt"/>
+                    <constraint firstItem="ccc-04-lbl" firstAttribute="top" secondItem="ccc-03-img" secondAttribute="bottom" constant="9" id="ccc-c5-lbt"/>
+                    <constraint firstItem="ccc-04-lbl" firstAttribute="leading" secondItem="ccc-02-cnt" secondAttribute="leading" constant="2" id="ccc-c6-lbl"/>
+                    <constraint firstAttribute="trailing" secondItem="ccc-04-lbl" secondAttribute="trailing" constant="2" id="ccc-c7-lbr"/>
+                    <constraint firstItem="ccc-07-sub" firstAttribute="top" secondItem="ccc-04-lbl" secondAttribute="bottom" constant="3" id="ccc-cb-stp"/>
+                    <constraint firstItem="ccc-07-sub" firstAttribute="leading" secondItem="ccc-04-lbl" secondAttribute="leading" id="ccc-cc-sld"/>
+                    <constraint firstItem="ccc-07-sub" firstAttribute="trailing" secondItem="ccc-04-lbl" secondAttribute="trailing" id="ccc-cd-str"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ccc-07-sub" secondAttribute="bottom" id="ccc-c8-lbb"/>
+                </constraints>
+            </view>
+            <size key="customSize" width="180" height="150"/>
+            <connections>
+                <outlet property="durationBadgeView" destination="ccc-05-bdg" id="ccc-o3-bdg"/>
+                <outlet property="durationLabel" destination="ccc-06-dur" id="ccc-o4-dur"/>
+                <outlet property="subtitleLabel" destination="ccc-07-sub" id="ccc-o5-sub"/>
+                <outlet property="thumbnailImageView" destination="ccc-03-img" id="ccc-o1-img"/>
+                <outlet property="titleLabel" destination="ccc-04-lbl" id="ccc-o2-lbl"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </collectionViewCell>
+    </objects>
+</document>

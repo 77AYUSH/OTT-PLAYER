@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentDetailVC" customModule="OTTPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerImageView" destination="cdv-04-img" id="cdv-o1-img"/>
+                <outlet property="descriptionLabel" destination="cdv-09-dsc" id="cdv-o2-dsc"/>
+                <outlet property="headerView" destination="cdv-11-hdr" id="cdv-o8-hdr"/>
+                <outlet property="metadataLabel" destination="cdv-07-met" id="cdv-o3-met"/>
+                <outlet property="playButton" destination="cdv-08-ply" id="cdv-o4-ply"/>
+                <outlet property="scrollView" destination="cdv-02-scr" id="cdv-o5-scr"/>
+                <outlet property="titleLabel" destination="cdv-06-ttl" id="cdv-o6-ttl"/>
+                <outlet property="view" destination="cdv-01-vie" id="cdv-o7-vie"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cdv-01-vie">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-02-scr">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-03-cnt">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="620"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-11-hdr" userLabel="Header View">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="334"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-04-img">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="334"/>
+                                        </imageView>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-12-tgr" userLabel="Top Gradient" customClass="GradientView" customModule="OTTPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="240"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="240" id="cdv-ck-tgh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="fadesFromTop" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-13-bgr" userLabel="Bottom Gradient" customClass="GradientView" customModule="OTTPlayer" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="334"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cdv-04-img" firstAttribute="top" secondItem="cdv-11-hdr" secondAttribute="top" id="cdv-cl-itp"/>
+                                        <constraint firstItem="cdv-04-img" firstAttribute="leading" secondItem="cdv-11-hdr" secondAttribute="leading" id="cdv-cm-ild"/>
+                                        <constraint firstAttribute="trailing" secondItem="cdv-04-img" secondAttribute="trailing" id="cdv-cn-itr"/>
+                                        <constraint firstAttribute="bottom" secondItem="cdv-04-img" secondAttribute="bottom" id="cdv-co-ibt"/>
+                                        <constraint firstItem="cdv-12-tgr" firstAttribute="top" secondItem="cdv-11-hdr" secondAttribute="top" id="cdv-cp-ttp"/>
+                                        <constraint firstItem="cdv-12-tgr" firstAttribute="leading" secondItem="cdv-11-hdr" secondAttribute="leading" id="cdv-cq-tld"/>
+                                        <constraint firstAttribute="trailing" secondItem="cdv-12-tgr" secondAttribute="trailing" id="cdv-cr-ttr"/>
+                                        <constraint firstItem="cdv-13-bgr" firstAttribute="top" secondItem="cdv-11-hdr" secondAttribute="top" id="cdv-cs-btp"/>
+                                        <constraint firstItem="cdv-13-bgr" firstAttribute="leading" secondItem="cdv-11-hdr" secondAttribute="leading" id="cdv-ct-bld"/>
+                                        <constraint firstAttribute="trailing" secondItem="cdv-13-bgr" secondAttribute="trailing" id="cdv-cu-btr"/>
+                                        <constraint firstAttribute="bottom" secondItem="cdv-13-bgr" secondAttribute="bottom" id="cdv-cv-bbt"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-05-stk">
+                                    <rect key="frame" x="20" y="278" width="353" height="310"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-06-ttl">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="38.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metadata" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-07-met">
+                                            <rect key="frame" x="0.0" y="50.333333333333343" width="353" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-08-ply">
+                                            <rect key="frame" x="0.0" y="79.333333333333343" width="353" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="cdv-ca-plh"/>
+                                            </constraints>
+                                            <state key="normal" title="Play"/>
+                                            <connections>
+                                                <action selector="playButtonTapped:" destination="-1" eventType="touchUpInside" id="cdv-a1-ply"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-09-dsc">
+                                            <rect key="frame" x="0.0" y="143.33333333333331" width="353" height="19.333333333333343"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="cdv-11-hdr" firstAttribute="top" secondItem="cdv-03-cnt" secondAttribute="top" id="cdv-c1-itp"/>
+                                <constraint firstItem="cdv-11-hdr" firstAttribute="leading" secondItem="cdv-03-cnt" secondAttribute="leading" id="cdv-c2-ild"/>
+                                <constraint firstAttribute="trailing" secondItem="cdv-11-hdr" secondAttribute="trailing" id="cdv-c3-itr"/>
+                                <constraint firstItem="cdv-11-hdr" firstAttribute="width" secondItem="cdv-11-hdr" secondAttribute="height" multiplier="20:17" id="cdv-c4-asp"/>
+                                <constraint firstItem="cdv-05-stk" firstAttribute="top" secondItem="cdv-11-hdr" secondAttribute="bottom" constant="-56" id="cdv-c5-stp"/>
+                                <constraint firstItem="cdv-05-stk" firstAttribute="leading" secondItem="cdv-03-cnt" secondAttribute="leading" constant="20" id="cdv-c6-sld"/>
+                                <constraint firstAttribute="trailing" secondItem="cdv-05-stk" secondAttribute="trailing" constant="20" id="cdv-c7-str"/>
+                                <constraint firstAttribute="bottom" secondItem="cdv-05-stk" secondAttribute="bottom" constant="32" id="cdv-c8-sbt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="cdv-03-cnt" firstAttribute="top" secondItem="cdv-02-scr" secondAttribute="top" id="cdv-cb-ctp"/>
+                        <constraint firstItem="cdv-03-cnt" firstAttribute="leading" secondItem="cdv-02-scr" secondAttribute="leading" id="cdv-cc-cld"/>
+                        <constraint firstAttribute="trailing" secondItem="cdv-03-cnt" secondAttribute="trailing" id="cdv-cd-ctr"/>
+                        <constraint firstAttribute="bottom" secondItem="cdv-03-cnt" secondAttribute="bottom" id="cdv-ce-cbt"/>
+                        <constraint firstItem="cdv-03-cnt" firstAttribute="width" secondItem="cdv-02-scr" secondAttribute="width" id="cdv-cf-cwd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cdv-10-saf"/>
+            <constraints>
+                <constraint firstItem="cdv-02-scr" firstAttribute="top" secondItem="cdv-01-vie" secondAttribute="top" id="cdv-cg-stp"/>
+                <constraint firstItem="cdv-02-scr" firstAttribute="leading" secondItem="cdv-01-vie" secondAttribute="leading" id="cdv-ch-sld"/>
+                <constraint firstAttribute="trailing" secondItem="cdv-02-scr" secondAttribute="trailing" id="cdv-ci-str"/>
+                <constraint firstAttribute="bottom" secondItem="cdv-02-scr" secondAttribute="bottom" id="cdv-cj-sbt"/>
+            </constraints>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </view>
+    </objects>
+</document>

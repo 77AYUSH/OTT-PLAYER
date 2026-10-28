@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="fcc-01-cel" customClass="FeaturedCarouselCell" customModule="OTTPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="fcc-02-cnt">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="226"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-03-col">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fcc-04-lay">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-05-pgc">
+                        <rect key="frame" x="0.0" y="200" width="393" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="fcc-c1-pgh"/>
+                        </constraints>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fcc-03-col" firstAttribute="top" secondItem="fcc-02-cnt" secondAttribute="top" id="fcc-c2-ctp"/>
+                    <constraint firstItem="fcc-03-col" firstAttribute="leading" secondItem="fcc-02-cnt" secondAttribute="leading" id="fcc-c3-cld"/>
+                    <constraint firstAttribute="trailing" secondItem="fcc-03-col" secondAttribute="trailing" id="fcc-c4-ctr"/>
+                    <constraint firstItem="fcc-05-pgc" firstAttribute="top" secondItem="fcc-03-col" secondAttribute="bottom" id="fcc-c5-ptp"/>
+                    <constraint firstItem="fcc-05-pgc" firstAttribute="leading" secondItem="fcc-02-cnt" secondAttribute="leading" id="fcc-c6-pld"/>
+                    <constraint firstAttribute="trailing" secondItem="fcc-05-pgc" secondAttribute="trailing" id="fcc-c7-ptr"/>
+                    <constraint firstAttribute="bottom" secondItem="fcc-05-pgc" secondAttribute="bottom" id="fcc-c8-pbt"/>
+                </constraints>
+            </view>
+            <size key="customSize" width="393" height="226"/>
+            <connections>
+                <outlet property="collectionView" destination="fcc-03-col" id="fcc-o1-col"/>
+                <outlet property="pageControl" destination="fcc-05-pgc" id="fcc-o2-pgc"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </collectionViewCell>
+    </objects>
+</document>
